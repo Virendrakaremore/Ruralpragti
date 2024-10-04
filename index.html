@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Ruralpragati.html</title>
+  <!-- this is for the icons Fontawesom-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/2fefa9942d.js" crossorigin="anonymous"></script>
+
+
+  <!--this is for the LOGIN Tile -->
+  <style>
+    a.login:link, a:visited {
+      background-color: hsl(119, 97%, 50%);
+      color: rgb(15, 15, 15);
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 50px ;
+      font-family: "Fantasy", cursive;
+      font-size: 1.5em;
+    }
+    
+    a.login:hover, a:active {
+      background-color: rgb(0, 255, 166);
+    }
+    a.singup:link, a:visited {
+      background-color: hsl(119, 97%, 50%);
+      color: rgb(15, 15, 15);
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 50px ;
+      font-family: "Fantasy", cursive;
+      font-size: 1.5em;
+    }
+    
+    a.signup:hover, a:active {
+      background-color: rgb(0, 255, 166);
+    }
+    </style>
+    <style type="text/css">
+       
+      .img_deg1
+      {
+        float: right;
+        width: 150; 
+      }
+     
+      .pos_cen1
+      {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        
+        background-color: rgba(0,0,0,0.3);
+        backdrop-filter:blur(2px);
+
+        padding: 30px;
+        border-radius: 50px;
+      }
+      .img_deg2
+      {
+        float: left;
+        width: 120; 
+        height: 50;
+
+      }
+      .pos_cen2
+      {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        top: 1109px;
+        background-color: rgba(0,0,0,0.3);
+        backdrop-filter:blur(2px);
+
+        padding: 30px;
+        border-radius: 50px;
+      }
+      .img_deg3
+      {
+        float: right;
+        width: 120; 
+        height: 50;
+
+      }
+      .pos_cen3
+      {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        top: 1621px;
+        background-color: rgba(0,0,0,0.3);
+        backdrop-filter:blur(2px);
+
+        padding: 30px;
+        border-radius: 50px;
+      }
+      .pos_cen4
+      {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        top: 2091px;
+        background-color: rgba(0,0,0,0.3);
+        backdrop-filter:blur(2px);
+
+        padding: 30px;
+        border-radius: 50px;
+      }
+      .pos_cen5
+      {
+        background-color:  rgb(52, 44, 44);
+        position: absolute;
+        width: 100%;
+        top: 2800px;
+        padding: 30px;
+        text-decoration-color:  white;
+        
+      }
+      
+    </style>
+</head>
+
+<body>
+  
+  <!--Background Image -->
+<style>
+body {
+  background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwcICA0ICAgHBwcHCA0HBwcHBw8ICQcNFREWFhURExMYHSggGCYlJxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NFQ0NDysZFRkrKzctNzcrNy0tNystKys3LS0tLS03NysrKzcrNy0rKysrKysrKysrKysrKy0rKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAbAAEBAQEBAAMAAAAAAAAAAAABAAIDBQQGB//EABgQAQEBAQEAAAAAAAAAAAAAAAABERIC/8QAGgEBAQEBAQEBAAAAAAAAAAAAAwIBBAAGBf/EABkRAQEBAQEBAAAAAAAAAAAAAAABAhESA//aAAwDAQACEQMRAD8A/U0kavxIiEilhSSKSJJJpMpJDp8pJC06MhEDp4kklaZpVeTWWa1RVQemazWqzVRz6jNYrdZpI5tsViulYpcuP6RzrFdKxT5cH0jFYrpWKbLh+kYrNbrNNHJqMUVus2Elc24xWW6CSg1GKG6FyhsfaEC/Lr7yJJJpIiCiliSSKSJJDp8pJC06MoFDp8oFJWAQ8ygU0VotM1mt1mqgNMVmt1mrjm3GKxY6VilzXH9I52M2OljNh81w/SOVjNjpYzYaVxfTLnYzY6WCwsrl1lysFjpYzhJXNrLngsdLGbFyh1lzsWN2DFyhuX2NJOCvtoUEkkKSRYWEJIpMlJDroykkLToykkKnykkkiBTyazRWg2D0wLGgoGoxYzY6WM2Klc+452M2OlgsJK5N5crGbHWxmw2a495crGbHWxmwsrj3hysZsdcFhJpzaw5WM3y7WM2EmnPrDlyLHXBi5oNw48jl25HKpoV+b2kk531sRCZSQpJFJCgkUuSQh6PkpIOnThJEVdGUCkLCIeZQimj0yMaGNDqM2M2N4MbAajFjNjpYLFyubeXKwWOmCwsrk3lyxm+XbGb5JNOXeHLkXy64OVzQNYcuRy7cs8rmga+blyOXXlcqmhX5uHK5duRyr0O/N89BK4+ghISbFwoFNhYUEiwmSQR2HyUkGx05KSFYfNSRRwnQimMAaDyKFhWPCrODG8GNFqMYMdMGK659RzwY64MVNOfWXLBy64uVzTn1hx5XLryMV6DcOXI5duRyqaFr5uPK5deVyr0O/Nx5HLtyuVeh35toJ28fpQoFPFwoFNhIiEmwmWkDBWHzSRCLUPmmJQisPmpJDsJ1JFPHuhFMTUisYijFjWLGIsZwY3ixvRayxixvFjeh1lzxcumLG9DrDlyuXTFjfQrhyxcuvI5V6HcOXK5deRy30i/Ny5XLrg5b6Tfm+OgX7HFQoJnFwlkpsXKSyU2ElaMZMRYbNahjJFqHzWizCKw2aUkOwnSkkWPdRRHXkiU14HDDiakYsaxYzqLGcWN4se6ixjDjeLHvQ7lzxY6Yse9DuHPBjpixvpNw54sdMGN9JuHPFy6Yse9IuHmoJ9FxyQoJ7imkCni4UIYywkpMBHYTNMajJHYfNaIhFYaUpIdhJSQRWKJEI7FGGKEdeUMUMTXlIcMhxCRhww4nqeDFjWHGdTcsYsbxY91PljFjWLHus8sYsbxY3rPLGDHTBj3U+HjJJ9S/IiSTykUmVUKBjCQmBqIpIYRDB02TCjBU2U1ARUkMIjQqSKFEdUo1BCKtJihRXiQ0OsRSTWEwNRlYEUlgRDzOIFVrACmseIjix9X1+LwIrHmpFMqojEmVcJiMRSQmCNQdLlRqCGCpskhoVLEQ1B6XEVCKrUKMHWkhodeMIKKwkFDCYDGMSSYxJJ54Ah5NQNDUvIxYk+pfkJBPNKxJ5qKTFQmJJpI1DEh0uS0kKlySUKmiMKFVwxJDq2lEh15opDrTGgkVhKSWExJLEknmJJMeASalBJ5L/9k=');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+
+
+
+
+
+  <!--Ruralpragati in curcive heading -->
+<style> 
+  h1 {
+    font-size: 150px;
+    font-family: "Sofia", sans-serif;  
+    color: rgb(0, 255, 115); 
+  }
+
+  p {
+    font-family: Arial, sans-serif;  
+    font-size: 20px; 
+    color: black;  
+  }
+
+  body {
+    background-color: #f0f0f0; 
+  }
+</style>
+
+<style> 
+  h2 {
+    font-size: 70px;
+    font-family: "Georgia, serif";  
+    color: rgb(0, 255, 255); 
+    border-style: dotted;
+    border-width: 10px;
+    border-radius: 100px;
+  }
+
+  h3{
+    font-size: 30px;
+    color: rgb(255, 255, 255); 
+    display: flex;
+    justify-content: center;
+
+  }
+
+
+</style>
+
+
+<!-- logo of Ruralpragati-->
+  <img src="img/Ruralpragati logo2.jpg.png" alt="Ruralpragati" style="float:left;width:300px;height:300px;">
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
+<body>
+  <div>
+    <center><h1 class="font-effect-neon">Ruralpragati</h1></center>
+  </div>
+  
+  <hr color="Black"  width="800"/>
+ <!-- Icons-->
+  <div style="text-align: right;">
+  <i class="fas fa-home" style="font-size:40px;color:#5e6463;"></i>
+  <i class="fas fa-bars"style="font-size:40px;color:#5e646;"></i>
+</div>
+<!--login link -->
+<a class="login" href="https://www.rgycsm.org/branch/" target="_blank">Login</a>
+<a class="signup" href="https://www.rgycsm.org/branch/" target="_blank">sign up</a> 
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="pos_cen1">
+<img class="img_deg1" src="img/three girls seeing laptop.jpg.jpeg" alt="R" >
+<p>
+     The Rural Education and Training Platform is an online resource hub dedicated to empowering rural communities.  <br><br>
+    It offers educational materials and training programs focused on modern farming techniques, financial management, and digital literacy. <br><br>
+    The platform aims to support sustainable development by providing practical knowledge and skills that improve livelihoods and help rural individuals and communities adapt to evolving challenges in agriculture and technology.<br><br>
+   
+</p>
+</div>
+
+
+   
+
+    <div class="pos_cen2">
+     <img class="img_deg2" src="img/row of girls.jpg.jpg" alt="R" >
+
+     <p>
+      Empowering rural youth with hands-on technical skills for a brighter future.<br><br>
+      Bridging the digital divide with accessible education for rural communities.<br><br>
+      Innovative learning solutions for rural areas, unlocking endless opportunities.<br><br>
+      Transforming rural education with cutting-edge technology and training.<br><br>
+      Empowering the next generation of rural innovators through technical education.<br><br>
+     </p>
+    </div>
+
+    <div class="pos_cen3">
+      <img class="img_deg3" src="img/kisan.jpg.jpg" alt="R" >
+  
+      <p>
+        A comprehensive website providing educational resources and training modules tailored to rural communities.<br><br>
+        It offers in-depth guidance on modern farming techniques, financial management, and digital literacy, empowering individuals to enhance their skills, adopt sustainable practices, and thrive in today’s technology-driven world. <br><br>
+        Designed for ease of access, this platform bridges the gap between traditional knowledge and modern innovation, fostering growth and self-reliance in rural areas.<br><br>
+        Rural progress starts with access to the right technical education.
+        Shaping rural futures with practical, tech-based learning solutions.<br><br>
+      </p>
+    </div>
+  
+
+
+
+
+    
+<div class="pos_cen4">
+<h2> <center>E-Book Section</center></h2>
+<style>
+  a:link, a:visited {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    font-family: "Fantasy", cursive;
+    font-size: 1.5em;
+  }
+  
+  a:hover, a:active {
+    background-color: rgb(102, 255, 0);
+    color: rgb(243, 10, 10);
+  }
+  </style>
+
+<a href="https://www.rgycsm.org/library" target="_blank">Technical Knowledge</a><br><br>
+<a href="https://www.ncertbooks.guru/maharashtra-state-board-books/" target="_blank">1st to 12th maharashtra-state-board-books</a><br><br>
+<a href="https://dopdfdownload.com/financial-management-for-farmers-and-rural-managers.pdf" target="_blank">Financial Management For Farmers And Rural Managers</a><br><br>
+<a href="https://pdf-library.org/modern-farming-methods.pdf" target="_blank">Modern Farming Methods</a><br><br>
+<a href="https://www.infobooks.org/free-pdf-books/various-topics/hydroponics/" target="_blank">Securing Farmers for the future</a><br><br>  
+
+</div>
+
+<footer class="pos_cen5">
+ 
+  <h3><center>© 2024 B.Tech CSE(DS) Field Project<br>
+    SBJITMR<br>
+    Designed & Developed by:<br><br>
+    <ul>
+    <li>Mr.Virendra Karemore</li><br>
+    <li>Miss.Puja Thote</li><br>
+    <li>Miss.Bhumika Kotpalliwar</li><br>
+    <li>Mr.Priyanshu Bhandare</li><br>
+    <li>Miss.Vanshika Kathwate</li><br></ul><br><br>
+    Contact us :+91 8799928982;  virendrakaremore.aids23@sbjit.edu.in<br><br>
+  </center></h3>
+  
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
